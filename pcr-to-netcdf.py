@@ -184,19 +184,5 @@ zip_file.close()
 #..............................................................................   
 print(f"\n\033[1m\033[32mConverted {file_path} to {ncd_file}\033[0m") # printing in bold green 
     
-     
-
-#%% 
-ds_1 = xr.open_dataset('C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/output_data/prec_00001_r.nc')
-print (ds_1)
-ds_val_1 = ds_1['Band1'].values    
-print(ds_val_1)
-  
-
-ds8 = xr.open_dataset('C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/scr/pr_r01_1990-2029_him.nc')
-print (ds8)
-
-# Close the dataset
-ds8.close()
    
 
