@@ -21,6 +21,9 @@ import fiona
 from shapely.geometry import shape, box
 
 
+base_dir = os.getcwd()
+
+
 dir_forcing = 'C:/SPHY_input/forcing/'
 input_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/input_data/'
 output_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/output_data/'
