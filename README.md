@@ -7,6 +7,7 @@
 * Compare converted KNMI-LENTIS NetCDF files with ERA5 NetCDF.
 
 ### Steps
+Here I have used Linux OS for CDO tool to change the grid alignment and griddles for target grid info etc. But python has been used to change the projection, format and add time stamps.
 
 #### 1. Data Preparation
 * Identify coordinate systems: Determine the coordinate system of PCR files (likely not WGS84) and the desired target system which is WGS84.
