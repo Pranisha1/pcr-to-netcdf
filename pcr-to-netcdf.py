@@ -28,15 +28,6 @@ output_dir = os.path.join(base_dir,  'output_data')
 vector_file = os.path.join(input_dir, 'Extent_WGS84.shp')  # to provide the boundary of the map
 zip_filename = os.path.join(output_dir, "nc_files.zip")
 
-
-
-# dir_forcing = 'C:/SPHY_input/forcing/'
-# input_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/input_data/'
-# output_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/output_data/'
-# vector_file = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/input_data/Extent_WGS84.shp' #to provide the boundary of the map
-# zip_filename = os.path.join(output_dir, "nc_files.zip")
-
-
 #%% 
 
 # Define the desired date range
