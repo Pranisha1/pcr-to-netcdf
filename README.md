@@ -1,5 +1,15 @@
 # pcr-to-netcdf
- This file converts pcr files for the ERA5 data and then converts them to NetCDF. I will then compare two NetCDF (ERA5 and KNMI-LENTIS)
+ This file converts PCR files for the ERA5 data and then converts them to NetCDF. 
+ Steps:
+* Define the filetype
+* Select the data
+* Since pcr file is in a different projection system, change it to match the NetCDF projection system that you want to compare with
+* Change the reprojected PCR to the NetCDF file
+* Save in a zip file to reduce the file size
+* Add timestamps to the converted NetCDF file
+* Combine them
+ 
+#### The objective is to compare two NetCDF (ERA5 and KNMI-LENTIS)
 
 
  
