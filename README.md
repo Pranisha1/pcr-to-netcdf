@@ -1,5 +1,5 @@
 # pcr-to-netcdf
- This file converts PCR files for the ERA5 data and then converts them to NetCDF. 
+ This file converts PCR files for the ERA5 data and then converts them to NetCDF. /n 
  Steps:
 * Define the filetype
 * Select the data
