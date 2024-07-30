@@ -1,0 +1,15 @@
+For running the pythin following modules are required:
+xarray
+numpy
+pandas
+netCDF4
+datetime
+sipfile
+rasterio
+fiona
+shapely.geometry
+os
+sys
+
+
+The .sh is a bash file that runs in Linux os
