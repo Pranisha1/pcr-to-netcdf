@@ -21,12 +21,12 @@ import fiona
 from shapely.geometry import shape, box
 
 
-base_dir = os.getcwd()
-dir_forcing = os.path.join(base_dir, 'input_data', 'forcing')
-input_dir = os.path.join(base_dir, 'input_data')
-output_dir = os.path.join(base_dir,  'output_data')
-vector_file = os.path.join(input_dir, 'Extent_WGS84.shp')  # to provide the boundary of the map
+dir_forcing = 'C:/SPHY_input/forcing/'
+input_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/input_data/'
+output_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/output_data/'
+vector_file = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/input_data/Extent_WGS84.shp' #to provide the boundary of the map
 zip_filename = os.path.join(output_dir, "nc_files.zip")
+
 
 #%% 
 
@@ -184,5 +184,19 @@ zip_file.close()
 #..............................................................................   
 print(f"\n\033[1m\033[32mConverted {file_path} to {ncd_file}\033[0m") # printing in bold green 
     
+     
+
+#%% 
+ds_1 = xr.open_dataset('C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/output_data/prec_00001_r.nc')
+print (ds_1)
+ds_val_1 = ds_1['Band1'].values    
+print(ds_val_1)
+  
+
+ds8 = xr.open_dataset('C:/Users/pokhr002/OneDrive - Universiteit Utrecht/06Programming/01Python/07_Lentis/scr/pr_r01_1990-2029_him.nc')
+print (ds8)
+
+# Close the dataset
+ds8.close()
    
 
